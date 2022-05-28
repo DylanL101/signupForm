@@ -6,49 +6,63 @@
     <link rel = "stylesheet" href ="style.css">
 </head>
 <body>
+<div class = "contain">
+  <div class ="leftSide">
     <div id ="rectangle">
-        <img src = "odinImage.png">
-        <h1>ODIN</h1>
+       <!-- <img src = "odinImage.png"> -->
+        <h1>Welcome to the Signup form!</h1>
     </div>
     <div id ="footerLeft">
         <div class = "caption">Photo by Pietro De Grandi on Unsplash</div>
     </div>
+  </div>
+    <div class ="rightSide">
     <div id = "rightIntro">
         <h2>Sign up below for more information and receive the lastest reports!</h2>
         <h2>You know it is the best thing to do!</h2>
         <h2 id = "time">Time to sign up!</h2>
+        
             
     </div>
+    <div class ="formSign">
     <form action ="#" method = "get">
-        <div class = "box">
-        <label for = "firstName">First Name</label>
-        <input type ="text" id ="firstName" name = "first">
+         <div class = "firstName">
+             <label for = "firstName">First Name</label>
+                 <input type ="text" id ="firstName" name = "first">
         </div>
         
-        <div class ="box">
+        <div class ="lastName">
             <label for = "lastName">Last Name</label>
             <input type ="text" id ="lastName" name = "last">
        </div>
-       
-       <div class = "box">
-        <label for = "firstName">First Name</label>
-        <input type ="text" id ="firstName" name = "first">
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class = "email">
+        <label for = "email">Email</label>
+        <input type ="email" id ="email" name = "yourEmail" placeholder=" abc@gmail.com">
         </div>
         
-        <div class ="box">
-            <label for = "lastName">Last Name</label>
-            <input type ="text" id ="lastName" name = "last">
+        <div class ="phoneNumber">
+            <label for = "phoneNumber">Phone Number</label>
+            <input type ="tel" id ="phoneNumber" name = "phoneNumber">
        </div>
-       <div class = "box">
-        <label for = "firstName">First Name</label>
-        <input type ="text" id ="firstName" name = "first">
+       <br>
+       <br>
+       <br>
+       <br>
+       <div class = "password">
+        <label for = "password">Password</label>
+        <input type ="password" id ="Password" name = "password">
         </div>
         
-        <div class ="box">
-            <label for = "lastName">Last Name</label>
-            <input type ="text" id ="lastName" name = "last">
+        <div class ="confirmPassword">
+            <label for = "confirmPassword">Confirm Password</label>
+            <input type ="password" id ="confirmPassword" name = "confirmPassword">
        </div>
-       
+        </div>
+    </div>
     </form>
     </div>
 </body>

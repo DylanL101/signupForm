@@ -1,11 +1,66 @@
 body, html{
-    position: relative;
-    min-height: 100%;
+    /*position: relative;
+    min-height: 100%;*/
     background-image: url("italy.jpg");
-    background-repeat: no-repeat;
-    background-size: 40% 100%  ;
+    /*background-repeat: no-repeat;
+    background-size: 40% 100%  ;*/
+    margin: 0;
 }
- #rectangle{
+.contain{
+    display: flex;
+}
+.leftSide{
+    flex-basis:40%;
+    color:azure;
+    text-align: center;
+    align-self: center ;
+    background-color: rgba(0,0,0,0.5);
+
+}
+#footerLeft{
+    position: fixed;
+    bottom:0;
+}
+.rightSide{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+}
+#rightIntro{
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:rgb(79, 79, 163);
+    padding: 100px;
+}
+.formSign{
+align-self: stretch;
+padding: 100px;
+background-color: white;
+color:rgb(79, 79, 163);
+font-size: 20px;
+
+}
+input, label{
+    display:block;
+}
+.firstName, .email, .password{
+    float: left;
+    margin-right:80px;
+    
+}
+.lastName{
+    float: left;
+
+}
+.phoneNumber{
+    float:left;
+}
+.confirmPassword{
+    float:left;
+}
+ /*#rectangle{ create parent div named leftSide
     position:absolute;
     top:0;
     left: 0;
@@ -19,8 +74,10 @@ body, html{
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
     cursor: pointer;
+    
  }
- img {
+ */
+ /*img {
      height:100%;
      width:100%;
      object-fit:contain;
@@ -32,45 +89,83 @@ body, html{
      color:azure;
 
  }
- #footerLeft{
+ */
+ /*#footerLeft{
      position: fixed;
      bottom:0;
      color:white;
      padding-left: 360px;
  }
+ 
  #footerLeft > div.caption{
      display: flex;
      justify-content: center;
      align-items: center;
  }
- #rightIntro{
-     position:absolute;
+ */
+ /*.rightSide{
+     width:60%;
+     margin:0;
+     padding:0;
+     margin-top: 5%;
+ }
+ .rightSide > *{
+     padding-left: 1%;
+     padding-right: 1%;
+
+ }
+ */
+ /*.rightSide{
+     flex-basis: 60%;
+     display: flex;
+     flex-direction: column;
+     align-self: stretch;
+    padding-left: 1015px;
+    margin-top: 0;
+    padding-bottom: 100px;
+ }
+ */
+
+ /*#rightIntro{
+     position:sticky;
      right:500px;
      font-size: 20px;
      font-family: Helvetica, sans-serif;
      color:rgb(41, 41, 100)
 
  }
+
  #time{
-     padding-top: 80px;
- }
- .box{
-     display:inline-block;
-     
- }
- .box > label{
-    display: block;
- }
- form{
-     position: absolute;
-     min-height: 100%;
-     right:100px;
-     margin-top: 400px;
-     margin-right: 1000px;
-     display: grid;
-     grid-template-columns: 100px 100px 100px;
-     grid-template-rows: 100px 100px;
-     grid-row-gap:  32px;
-     grid-column-gap: 32px;
-     
- }
+    padding-top: 80px;
+}
+*/
+input, label{
+    display:block;
+}
+.firstName, .email, .password{
+    float: left;
+    margin-right:80px;
+}
+.lastName{
+    float: left;
+}
+.phoneNumber{
+    float:left;
+}
+.confirmPassword{
+    float:left;
+}
+/*form{
+    position: sticky;
+    min-height: 100%;
+    right:100px;
+    margin-top: 400px;
+    margin-right: 1000px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-row-gap:  32px;
+    grid-column-gap: 32px;
+    
+}
+*/
