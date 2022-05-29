@@ -4,10 +4,13 @@ body, html{
     background-image: url("italy.jpg");
     /*background-repeat: no-repeat;
     background-size: 40% 100%  ;*/
+    height:100%;
     margin: 0;
+    
 }
 .contain{
     display: flex;
+    height:100%;
 }
 .leftSide{
     flex-basis:40%;
@@ -25,7 +28,9 @@ body, html{
     flex-basis: 60%;
     display: flex;
     flex-direction: column;
+    height: 100%;
     align-self: flex-end;
+
 }
 #rightIntro{
     background-color: gainsboro;
@@ -33,17 +38,32 @@ body, html{
     font-weight: 700;
     color:rgb(79, 79, 163);
     padding: 100px;
+    height: 100%;
 }
 .formSign{
 align-self: stretch;
 padding: 100px;
 background-color: white;
+font-family: Arial, Helvetica, sans-serif;
 color:rgb(79, 79, 163);
 font-size: 20px;
+height: 100%;
 
 }
 input, label{
     display:block;
+    border-radius: 7px;
+
+}
+input{
+    border-color: #e5e7eb;
+}
+input:focus{
+    border-width: 2px;
+    border-color: rgb(61, 61, 99);
+    box-shadow: 2px 2px bisque;
+    background-color: lemonchiffon;
+    
 }
 .firstName, .email, .password{
     float: left;
@@ -59,6 +79,49 @@ input, label{
 }
 .confirmPassword{
     float:left;
+}
+.error{
+    border-width: 1px;
+    border-color: rgb(240, 14, 14);
+}
+.errorWarning{
+    color:rgb(240, 14, 14);
+    margin:0;
+    font-size: 11px;
+}
+#footerRight{
+    height:100%;
+    align-self: stretch;
+   padding: 100px;
+    background-color: gainsboro;
+
+}
+button{
+    border-radius: 6px;
+    font-size: 20px;
+    width: 225px;
+    padding:25px;
+    background-color: blueviolet;
+    color:white;
+    font-weight: 700;
+}
+h3{
+    font-size: 25px;
+    color:rgb(79, 79, 163);
+
+}
+a{
+    color:rgb(51, 121, 51);
+    text-decoration: none;
+}
+
+/*#footerRight{
+    float:right;
+    height: 306px;
+    width:1336px;
+   padding: 100px;
+    background-color: gainsboro;
+
 }
  /*#rectangle{ create parent div named leftSide
     position:absolute;
@@ -139,22 +202,7 @@ input, label{
     padding-top: 80px;
 }
 */
-input, label{
-    display:block;
-}
-.firstName, .email, .password{
-    float: left;
-    margin-right:80px;
-}
-.lastName{
-    float: left;
-}
-.phoneNumber{
-    float:left;
-}
-.confirmPassword{
-    float:left;
-}
+
 /*form{
     position: sticky;
     min-height: 100%;
